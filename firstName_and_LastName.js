@@ -1,10 +1,10 @@
-const person = {
+const human = {
 	firstName: "Stephen",
 	lastName: "Omotoso",
+	age: 20,
+},
 
-	fullName: function() {
-		return this.firstName + " " + this.lastName;
-    }
-};
+ {lastName, age} = human
+console.log(lastName);
 
-console.log(person.fullName())
+console.log(age);
