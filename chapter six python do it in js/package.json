@@ -1,0 +1,14 @@
+{
+  "name": "chapter-six-python-do-it-in-js",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "ConversionsBetweenCelsiusAndFahrenheit.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
