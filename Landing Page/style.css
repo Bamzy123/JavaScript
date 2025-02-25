@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    width: 90%;
+    margin: 0 auto;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.logo span {
+    margin: 10px;
+    color: dodgerblue;
+}
+.links ul {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+.links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.links ul li a:hover {
+    color: black;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+.sign-up button{
+    border-radius: black;
+    padding: 0.75rem 1.5rem;
+}
+.home {
+    padding: 3em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-text h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.home-text h1 span {
+    color: dodgerblue;
+}
+.home-button1{
+    border: none;
+    padding: 0.75rem 1.5rem;
+    background-color: dodgerblue;
+    color: white;
+}
+.home-button {
+    border-radius: black;
+    padding: 0.75rem 1.5rem;
+}
+.home-image {
+    text-align: right;
+}
+.about {
+    text-align: center;
+    padding-inline: 3em 0;
+}
+.about h2 {
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+.about p {
+    font-size: 1em;
+    color: #151111;
+}
+/* .sun {
+    position: relative;
+    margin-left: 70px;
+} */
+ .service-section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+ }
+ .service-heading {
+    font-size: 2em;
+    color: dodgerblue;
+    margin-bottom: 0.5rem;
+ }
+ .service-subheading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-bottom: 2rem;
+ }
+ /* .service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+ } */
+  .service-image {
+    display: flex;
+    justify-content: center;
+    
+  }
