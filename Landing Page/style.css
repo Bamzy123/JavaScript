@@ -104,9 +104,6 @@ body {
     justify-content: space-between;
     margin-bottom: 3rem;
   }
-  .service-item.row {
-    flex-direction: row;
-  }
   .service-image {
     flex: 1;
     min-width: 300px;
@@ -144,21 +141,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: dodgerblue;
+    height: 20rem;
   }
   .special-help {
     align-items: center;
-    padding: 3em 0;
-    background-color: #007acc;
+    padding: 2em 0;
   }
   .special-image {
-    padding-top: 20%;
+    padding-top: 10%;
     margin-bottom: 2em;
+    margin-left: 55px;
   }
   .special-help-text h2{
+    margin-right: auto;
     color: white;
+    font-size: xx-large;
   }
-  .special-button {
+  .special-button button{
     border-radius: black;
-    padding: 0.75rem 1.5rem;
-    
+    padding: 0.99rem 2.3rem;
+    margin-left: 20%;
+    font-size: 20px;
   }
+  .special-help-text {
+    margin-right: 10rem;
+  }
+  /* * {
+    border:solid, #151111;
+  } */
