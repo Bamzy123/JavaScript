@@ -1,99 +1,193 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    border: solid black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: solid black;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.5;
+}
+.hero-div{
+  background-image: linear-gradient(to right, #ebfffc, #e5fdf7, #dae6e6, #EDF3EE, #dae6e6);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  border: none;
 }
 
-body{
-    padding: 0px 70px;
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(to right, rgb(215, 247, 237), rgb(238, 241, 240));
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #22c55e;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav ul li a {
+  font-size: 16px;
+  color: #333;
+}
+.header-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.login-link {
+  font-size: 16px;
+  color: #333;
+}
+.signup-btn {
+  background-color: #22c55e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
-.hero-logo{
-    color: #54BD95;
+.hero {
+  padding: 40px 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.navbar-link{
-    display: flex;
+.hero-left {
+  flex: 1 1 500px;
+  margin-right: 20px;
+}
+.hero-left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.hero-left .curve {
+  margin-bottom: 30px;
+}
+.hero-left p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.cta-btn {
+  background-color: #22c55e; 
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.cta-btn:hover {
+  opacity: 0.9;
+}
+.view-demo-link {
+  font-size: 16px;
+  color: #22c55e;
+  text-decoration: underline;
+  align-self: center;
 }
 
-.navbar-link ul {
-    width: 100px;
-    flex-wrap: wrap;
+.hero-right {
+  flex: 1 1 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
-
-.navbar-link a {
-    text-decoration: none;
-    color: black;
+.man-image {
+  width: 600px;
+  border-radius: 10px;
 }
-.hero-signUp {
-    display: flex;
+.brands {
+  text-align: center;
+  padding: 40px 0;
 }
-
-.hero-signUp button{
-    background: #54BD95;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
+.brands p {
+  font-size: 20px;
+  color:black;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
-
-.hero-signUp p {
-    width: 50px;
-    top: 20px;
+.brands-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
-
-.home-section{
-    /* padding: 3em 0;
-    display: flex;
-    justify-content: space-between; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    flex-wrap: wrap;
+.brands-logos img {
+  height: 30px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  margin-top: 30px;
 }
-
-.home-content {
-    display: flex;
+.brands-logos img:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  header {
     flex-direction: column;
-    max-width: 50%;
-}
-
-.home-text {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.home-button {
-    display: flex;
-    align-items: center;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
     gap: 10px;
-}
+    margin-top: 10px;
+  }
+  .header-right {
+    margin-top: 10px;
+  }
 
-.home-button button {
-    padding: 10px 20px;
-    background: #54BD95;
-    border: none;
-    color: white;
-}
-
-.home-images {
-    display: flex;
-    gap: 20px;
-    max-width: 45%;
-}
-
-.home-images img {
-    width: 100%;
-    max-width: 250px;
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .hero-left h1 {
+    font-size: 32px;
+  }
+  .hero-left p {
+    font-size: 16px;
+  }
+  .man-image {
+    width: 80%;
+    max-width: 400px;
+  }
 }
